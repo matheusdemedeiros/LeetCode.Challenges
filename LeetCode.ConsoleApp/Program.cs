@@ -6,9 +6,9 @@ namespace LeetCode.ConsoleApp
     {
         public static void Main(string[] args)
         {
-            var challenge = new Challenges.LongestSubstringWithoutRepeatingCharacters.Challenge();
+            var challenge = new Challenges.MedianOfTwoSortedArrays.Challenge();
 #if RELEASE
-            var summary = BenchmarkRunner.Run<Challenges.LongestSubstringWithoutRepeatingCharacters.Challenge>();
+            var summary = BenchmarkRunner.Run<Challenges.MedianOfTwoSortedArrays.Challenge>();
 #endif
             var sw = System.Diagnostics.Stopwatch.StartNew();
             challenge.RunMy();
