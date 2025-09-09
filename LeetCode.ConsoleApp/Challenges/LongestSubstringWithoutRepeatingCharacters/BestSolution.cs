@@ -15,16 +15,33 @@
             {
                 var input = Inputs[i];
                 var result = LengthOfLongestSubstring(input);
+                Console.WriteLine(result);
             }
         }
+
         public int LengthOfLongestSubstring(string s)
         {
-            if (string.IsNullOrEmpty(s)) return 0;
+            int left = 0;
+            int right = 0;
+            int maxLength = 0;
+            HashSet<char> charSet = new();
 
-            if (s.Length == 1) return 1;
+            while (right < s.Length)
+            {
+                if (!charSet.Contains(s[right]))
+                {
+                    charSet.Add(s[right]);
+                    right++;
+                    maxLength = Math.Max(maxLength, right - left);
+                }
+                else
+                {
+                    charSet.Remove(s[left]);
+                    left++;
+                }
+            }
 
-            // TODO: refatorar o mySolution utilizando o conceito de janela deslizante (sliding window)'
-            return 0;
+            return maxLength;
         }
     }
 }

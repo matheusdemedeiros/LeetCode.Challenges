@@ -17,6 +17,7 @@ namespace LeetCode.ConsoleApp.Challenges.LongestSubstringWithoutRepeatingCharact
             {
                 var input = Inputs[i];
                 var result = LengthOfLongestSubstring(input);
+                Console.WriteLine(result);
             }
         }
 
