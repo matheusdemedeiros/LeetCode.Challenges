@@ -1,12 +1,12 @@
 ﻿using System.Numerics;
 
-namespace LeetCode.ConsoleApp
+namespace LeetCode.ConsoleApp.Challenges.AddTwoNumbers
 {
-    internal class AddTwoNumvers
+    public class AddTwoNumbers
     {
         public class MySolution
         {
-            static void Run(string[] args)
+            public static void Run()
             {
                 //[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 
@@ -43,7 +43,6 @@ namespace LeetCode.ConsoleApp
                 var l2 = new ListNode(5, new ListNode(6, new ListNode(4, null)));
                 var result = AddTwoNumbers(l1, l2);
             }
-
 
             public class ListNode
             {
