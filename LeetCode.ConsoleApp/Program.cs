@@ -1,11 +1,25 @@
-﻿namespace LeetCode.ConsoleApp
+﻿using BenchmarkDotNet.Running;
+
+namespace LeetCode.ConsoleApp
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            var solution = new Challenges.LongestSubstringWithoutRepeatingCharacters.LongestSubstringWithoutRepeatingCharacters.MySolution();
-            solution.Run();
+            var challenge = new Challenges.LongestSubstringWithoutRepeatingCharacters.Challenge();
+#if RELEASE
+            var summary = BenchmarkRunner.Run<Challenges.LongestSubstringWithoutRepeatingCharacters.Challenge>();
+#endif
+            var sw = System.Diagnostics.Stopwatch.StartNew();
+            challenge.RunMy();
+            var elapsedMy = sw.ElapsedMilliseconds;
+            Console.WriteLine($"MySolution elapsed time: {elapsedMy} ms");
+
+            sw.Restart();
+            challenge.RunBest();
+            var elapsedBest = sw.ElapsedMilliseconds;
+            Console.WriteLine($"BestSolution elapsed time: {elapsedBest} ms");
+            Console.ReadLine();
         }
     }
 }
