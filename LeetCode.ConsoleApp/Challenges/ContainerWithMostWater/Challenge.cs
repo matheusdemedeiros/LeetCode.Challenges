@@ -5,10 +5,17 @@ namespace LeetCode.ConsoleApp.Challenges.ContainerWithMostWater
     [MemoryDiagnoser]
     public class Challenge
     {
+        public int[] Input { get; set; }
+
+        public Challenge()
+        {
+            Input = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        }
+
         [Benchmark]
         public void RunMy()
         {
-            var solution = new MySolution();
+            var solution = new MySolution(Input);
             solution.Run();
         }
 
@@ -19,5 +26,4 @@ namespace LeetCode.ConsoleApp.Challenges.ContainerWithMostWater
             solution.Run();
         }
     }
-}
 }
