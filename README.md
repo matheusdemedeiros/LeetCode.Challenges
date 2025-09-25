@@ -49,6 +49,14 @@ Abaixo estão os desafios já implementados no repositório, organizados por pas
 **Algoritmo recomendado:** Two Pointers (ponteiros duplos, um no início e outro no fim da array, movendo o menor para dentro)
 **Complexidade:** O(n), onde n é o tamanho da array
 
+### 🌿 Longest Common Prefix
+
+**Descrição:** Dada uma array de strings, encontre o maior prefixo comum a todas elas. Retorne o prefixo comum mais longo.
+**Categoria:** String / Divide and Conquer ou Iterativo
+**Dificuldade:** Easy
+**Algoritmo recomendado:** Comparação iterativa dos caracteres (Horizontal Scanning) ou abordagem de divisão e conquista (Divide and Conquer)
+**Complexidade:** O(n * m), onde n é o número de strings e m é o comprimento médio das strings
+
 ## ▶️ Como Executar os Desafios
 
 Cada desafio possui sua própria classe dentro do namespace `Challenges`. Para executar um desafio específico, siga os passos abaixo:
