@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace LeetCode.ConsoleApp.Challenges.MedianOfTwoSortedArrays
+namespace LeetCode.ConsoleApp.Challenges.Arrays.MedianOfTwoSortedArrays
 {
     [MemoryDiagnoser]
     public class Challenge

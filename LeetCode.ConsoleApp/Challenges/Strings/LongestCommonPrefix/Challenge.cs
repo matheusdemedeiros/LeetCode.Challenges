@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace LeetCode.ConsoleApp.Challenges.LongestCommonPrefix
+namespace LeetCode.ConsoleApp.Challenges.Strings.LongestCommonPrefix
 {
     public class Challenge
     {

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.ConsoleApp.Challenges.ContainerWithMostWater
+﻿namespace LeetCode.ConsoleApp.Challenges.Arrays.ContainerWithMostWater
 {
     public class MySolution
     {

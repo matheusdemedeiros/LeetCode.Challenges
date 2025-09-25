@@ -1,4 +1,4 @@
-﻿namespace LeetCode.ConsoleApp.Challenges.MedianOfTwoSortedArrays
+﻿namespace LeetCode.ConsoleApp.Challenges.Arrays.MedianOfTwoSortedArrays
 {
     public class MySolution2
     {

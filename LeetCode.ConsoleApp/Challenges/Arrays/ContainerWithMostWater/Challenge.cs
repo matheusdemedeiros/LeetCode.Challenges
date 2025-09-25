@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace LeetCode.ConsoleApp.Challenges.ContainerWithMostWater
+namespace LeetCode.ConsoleApp.Challenges.Arrays.ContainerWithMostWater
 {
     [MemoryDiagnoser]
     public class Challenge

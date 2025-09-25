@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace LeetCode.ConsoleApp.Challenges.AddTwoNumbers
+namespace LeetCode.ConsoleApp.Challenges.LinkedList.AddTwoNumbers
 {
     [MemoryDiagnoser]
     public class Challenge

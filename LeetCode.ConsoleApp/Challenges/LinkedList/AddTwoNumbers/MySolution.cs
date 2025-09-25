@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace LeetCode.ConsoleApp.Challenges.AddTwoNumbers
+namespace LeetCode.ConsoleApp.Challenges.LinkedList.AddTwoNumbers
 {
     public class MySolution
     {

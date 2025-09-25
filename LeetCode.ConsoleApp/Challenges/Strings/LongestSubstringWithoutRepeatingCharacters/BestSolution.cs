@@ -1,4 +1,4 @@
-﻿namespace LeetCode.ConsoleApp.Challenges.LongestSubstringWithoutRepeatingCharacters
+﻿namespace LeetCode.ConsoleApp.Challenges.Strings.LongestSubstringWithoutRepeatingCharacters
 {
     public class BestSolution
     {

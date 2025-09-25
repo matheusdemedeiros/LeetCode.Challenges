@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace LeetCode.ConsoleApp.Challenges.LongestSubstringWithoutRepeatingCharacters
+namespace LeetCode.ConsoleApp.Challenges.Strings.LongestSubstringWithoutRepeatingCharacters
 {
     [MemoryDiagnoser]
     public class Challenge
