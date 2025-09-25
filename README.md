@@ -39,7 +39,15 @@ Abaixo estão os desafios já implementados no repositório, organizados por pas
 **Categoria:** Array / Binary Search  
 **Dificuldade:** Hard  
 **Algoritmo recomendado:** Binary Search sobre partições das arrays  
-**Complexidade:** O(log(min(n, m))), onde n e m são os tamanhos das arrays  
+**Complexidade:** O(log(min(n, m))), onde n e m são os tamanhos das arrays
+
+### 💧 Container With Most Water
+
+**Descrição:** Dada uma array de inteiros representando alturas verticais de linhas, encontre duas linhas que, junto com o eixo x, formam um "container" que contém a maior quantidade de água possível. Retorne a área máxima desse container.
+**Categoria:** Array / Two Pointers
+**Dificuldade:** Medium
+**Algoritmo recomendado:** Two Pointers (ponteiros duplos, um no início e outro no fim da array, movendo o menor para dentro)
+**Complexidade:** O(n), onde n é o tamanho da array
 
 ## ▶️ Como Executar os Desafios
 
