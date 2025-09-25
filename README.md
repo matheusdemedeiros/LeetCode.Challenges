@@ -5,8 +5,9 @@ O objetivo é praticar algoritmos, estruturas de dados e boas práticas de códi
 
 ## 📚 Estrutura do Projeto
 
-- Cada pasta dentro de Challenges/ corresponde a um problema do LeetCode.
-- Dentro de cada pasta:
+- Cada pasta dentro de Challenges/ corresponde a um tipo de problema do LeetCode (Arrays, Strings, LinkedLists...).
+- Dentro de cada pasta de categorias estão presentes as pastas dos desafios (onde cada pasta representa um desafio).
+- Dentro de cada pasta de desafio:
   - Challenge.cs → Descrição ou entrada principal do desafio.
   - MySolution.cs → Minha primeira solução (mais direta).
   - MySolution2.cs (3,4...) → Alternativas/testes de abordagem.
