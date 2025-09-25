@@ -40,8 +40,13 @@ namespace LeetCode.ConsoleApp.Challenges.LongestCommonPrefix
         [Benchmark]
         public void RunBest()
         {
-            var solution = new BestSolution();
-            solution.Run();
+
+            foreach (var input in Inputs)
+            {
+                var solution = new BestSolution(input);
+                var result = solution.Run();
+                Console.WriteLine($"Input: [{string.Join(", ", input)}] => Longest Common Prefix: '{result}'");
+            }
         }
     }
 }
