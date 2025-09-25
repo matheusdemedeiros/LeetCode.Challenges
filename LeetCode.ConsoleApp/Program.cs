@@ -6,9 +6,9 @@ namespace LeetCode.ConsoleApp
     {
         public static void Main(string[] args)
         {
-            var challenge = new Challenges.ContainerWithMostWater.Challenge();
+            var challenge = new Challenges.LongestCommonPrefix.Challenge();
 #if RELEASE
-            var summary = BenchmarkRunner.Run<Challenges.ContainerWithMostWater.Challenge>();
+            var summary = BenchmarkRunner.Run<Challenges.LongestCommonPrefix.Challenge>();
 #endif
             var sw = System.Diagnostics.Stopwatch.StartNew();
             challenge.RunMy();
