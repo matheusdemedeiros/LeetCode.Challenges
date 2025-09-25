@@ -6,9 +6,9 @@ namespace LeetCode.ConsoleApp
     {
         public static void Main(string[] args)
         {
-            var challenge = new Challenges.MedianOfTwoSortedArrays.Challenge();
+            var challenge = new Challenges.ContainerWithMostWater.Challenge();
 #if RELEASE
-            var summary = BenchmarkRunner.Run<Challenges.MedianOfTwoSortedArrays.Challenge>();
+            var summary = BenchmarkRunner.Run<Challenges.ContainerWithMostWater.Challenge>();
 #endif
             var sw = System.Diagnostics.Stopwatch.StartNew();
             challenge.RunMy();
