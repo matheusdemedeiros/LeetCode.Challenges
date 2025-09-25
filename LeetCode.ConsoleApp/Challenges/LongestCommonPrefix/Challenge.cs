@@ -10,6 +10,7 @@ namespace LeetCode.ConsoleApp.Challenges.LongestCommonPrefix
         {
             Inputs = new List<string[]>();
 
+            Inputs.Add(new string[] { "aabbcc", "aabb", "", "aa" });   // esperado: ""
             Inputs.Add(new string[] { "flower", "flow", "flight" }); // esperado: "fl"
             Inputs.Add(new string[] { "dog", "racecar", "car" });   // esperado: ""
             Inputs.Add(new string[] { "interspecies", "interstellar", "interstate" }); // esperado: "inters"
@@ -22,6 +23,7 @@ namespace LeetCode.ConsoleApp.Challenges.LongestCommonPrefix
             Inputs.Add(new string[] { "abab", "aba", "abc" });     // esperado: "ab"
             Inputs.Add(new string[] { "c", "c" });                     // esperado: "c"
             Inputs.Add(new string[] { "reflower", "flow", "flight" }); // esperado: ""
+
         }
 
         [Benchmark]
