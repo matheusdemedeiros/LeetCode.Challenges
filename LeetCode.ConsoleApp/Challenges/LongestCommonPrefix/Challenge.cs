@@ -31,7 +31,7 @@ namespace LeetCode.ConsoleApp.Challenges.LongestCommonPrefix
         {
             foreach (var input in Inputs)
             {
-                var solution = new MySolution(input);
+                var solution = new MySolution2(input);
                 var result = solution.Run();
                 Console.WriteLine($"Input: [{string.Join(", ", input)}] => Longest Common Prefix: '{result}'");
             }
