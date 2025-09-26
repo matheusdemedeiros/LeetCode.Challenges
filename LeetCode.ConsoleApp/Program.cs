@@ -6,9 +6,9 @@ namespace LeetCode.ConsoleApp
     {
         public static void Main(string[] args)
         {
-            var challenge = new Challenges.Strings.LongestCommonPrefix.Challenge();
+            var challenge = new Challenges.Hashtables.LetterCombinationsOfPhoneNumber.Challenge();
 #if RELEASE
-            var summary = BenchmarkRunner.Run<Challenges.Strings.LongestCommonPrefix.Challenge>();
+            var summary = BenchmarkRunner.Run<Challenges.Hashtables.LetterCombinationsOfPhoneNumber.Challenge>();
 #endif
             var sw = System.Diagnostics.Stopwatch.StartNew();
             challenge.RunMy();
