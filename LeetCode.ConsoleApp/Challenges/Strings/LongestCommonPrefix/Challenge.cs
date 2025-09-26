@@ -2,6 +2,7 @@
 
 namespace LeetCode.ConsoleApp.Challenges.Strings.LongestCommonPrefix
 {
+    [MemoryDiagnoser]
     public class Challenge
     {
         public List<string[]> Inputs { get; set; }
