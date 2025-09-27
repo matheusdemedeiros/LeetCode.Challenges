@@ -94,3 +94,77 @@ BestSolution elapsed time: XX ms
 ```
 
 **Dica**: Você também pode habilitar o benchmark oficial usando o BenchmarkRunner executando o projeto em modo **RELEASE** se quiser medir desempenho mais detalhado.
+
+## 📚 Como criar desafios de forma automatizada
+
+Para facilitar a organização dos desafios do LeetCode, utilizamos um template customizado do .NET CLI que gera automaticamente a estrutura de classes padrão:
+
+- Challenge.cs
+- MySolution.cs
+- BestSolution.cs
+
+Assim, não é preciso criar manualmente cada arquivo.
+
+### ⚙️ Instalação do template
+
+Na raiz do repositório, onde está a pasta ChallengeTemplate, execute:
+
+```bash
+dotnet new --install ./ChallengeTemplate
+```
+
+Isso registra o template localmente no seu .NET CLI.
+
+### 🔄 Atualização do template
+
+Se fizer alterações na pasta ChallengeTemplate, é necessário desinstalar e reinstalar o template:
+
+```bash
+dotnet new --uninstall ./ChallengeTemplate
+dotnet new --install ./ChallengeTemplate
+```
+
+### 📝 Criando um novo desafio
+
+O comando básico para criar um desafio é:
+
+```bash
+dotnet new challenge -n NomeDoDesafio --Category NomeDaCategoria -o Challenges/NomeDaCategoria/NomeDoDesafio
+```
+
+Onde:
+
+- `-n NomeDoDesafio` → nome do desafio (usado no namespace e na pasta);
+- `--Category NomeDaCategoria` → categoria do desafio (Arrays, HashTables, LinkedLists, etc);
+- `-o` → caminho onde a pasta do desafio será criada;
+
+### 📌 Exemplos práticos
+
+Criar desafio TwoSum na categoria Arrays:
+
+```bash
+dotnet new challenge -n TwoSum --Category Arrays -o Challenges/Arrays/TwoSum
+```
+
+Estrutura final gerada:
+
+```markdown
+Challenges/
+ └─ Arrays/
+     └─ TwoSum/
+         ├─ Challenge.cs
+         ├─ MySolution.cs
+         └─ BestSolution.cs
+```
+
+Namespace dentro dos arquivos:
+
+
+```csharp
+namespace LeetCode.ConsoleApp.Challenges.Arrays.TwoSum
+{
+    public class Challenge { ... }
+}
+```
+
+Agora é possível usar um fluxo padronizado e rápido para criar novos desafios sem repetir código manualmente.

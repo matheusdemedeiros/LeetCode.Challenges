@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Matheus Medeiros",
+  "classifications": [ "LeetCode", "Challenge" ],
+  "identity": "LeetCode.ChallengeTemplate",
+  "name": "LeetCode Challenge",
+  "shortName": "challenge",
+  "sourceName": "ChallengeName",
+  "preferNameDirectory": true,
+  "symbols": {
+    "ChallengeName": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Nome do desafio",
+      "replaces": "ChallengeName"
+    },
+    "Category": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Categoria do desafio (Arrays, HashTables, etc)",
+      "replaces": "CategoryName",
+      "defaultValue": "General"
+    }
+  }
+}

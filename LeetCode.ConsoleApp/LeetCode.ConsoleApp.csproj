@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="challengetemplate\.template.config\template.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.15.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ChallengeTemplate\.template.config\" />
   </ItemGroup>
 
 </Project>
