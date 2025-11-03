@@ -6,9 +6,9 @@ namespace LeetCode.ConsoleApp
     {
         public static void Main(string[] args)
         {
-            var challenge = new Challenges.Hashtables.LetterCombinationsOfPhoneNumber.Challenge();
+            var challenge = new Challenges.Arrays.FindPivotIndex.Challenge();
 #if RELEASE
-            var summary = BenchmarkRunner.Run<Challenges.Hashtables.LetterCombinationsOfPhoneNumber.Challenge>();
+            var summary = BenchmarkRunner.Run<Challenges.Arrays.FindPivotIndex.Challenge>();
 #endif
             var sw = System.Diagnostics.Stopwatch.StartNew();
             challenge.RunMy();
