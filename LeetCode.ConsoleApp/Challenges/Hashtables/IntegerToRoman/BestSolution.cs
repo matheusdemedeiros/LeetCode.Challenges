@@ -6,7 +6,7 @@
         {
             throw new NotImplementedException();
 
-            dotnet new challenge -n ValidParentheses --Category Strings -o Challenges /Strings/ValidParentheses
+            
         }
     }
 }
